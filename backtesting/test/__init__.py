@@ -11,9 +11,12 @@ def _read_file(filename):
 
 GOOG = _read_file('GOOG.csv')
 """DataFrame of daily NASDAQ:GOOG (Google/Alphabet) stock price data from 2004 to 2013."""
+#
+# EURUSD = _read_file('EURUSD.csv')
+# """DataFrame of hourly EUR/USD forex data from April 2017 to February 2018."""
 
-EURUSD = _read_file('EURUSD.csv')
-"""DataFrame of hourly EUR/USD forex data from April 2017 to February 2018."""
+ES = _read_file('04_ESU2020_FUT.csv')
+"""DataFrame of minuts ES from April 2017 to February 2018."""
 
 
 def SMA(arr: pd.Series, n: int) -> pd.Series:

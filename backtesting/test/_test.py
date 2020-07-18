@@ -696,7 +696,8 @@ class TestUtil(TestCase):
             pass
 
         class Class:
-            pass
+            def __call__(self):
+                pass
 
         self.assertEqual(_as_str('4'), '4')
         self.assertEqual(_as_str(4), '4')
